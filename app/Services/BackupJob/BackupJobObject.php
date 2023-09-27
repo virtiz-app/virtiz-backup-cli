@@ -27,7 +27,7 @@ class BackupJobObject
 
     public function getDiskConfig(): array
     {
-        return $this->backupJob->disk_config ?? [];
+        return (array) $this->backupJob->disk_config;
     }
 
     public function getDatabaseType(): string
@@ -42,21 +42,21 @@ class BackupJobObject
 
     public function getExcludeFiles(): array
     {
-        return $this->backupJob->exclude_files ?? [];
+        return (array) $this->backupJob->exclude_files;
     }
 
     public function getIncludeFiles(): array
     {
-        return $this->backupJob->include_files ?? [];
+        return (array) $this->backupJob->include_files;
     }
 
     public function getBackupsToDelete(): array
     {
-        return $this->backupJob->backups_to_delete ?? [];
+        return (array) $this->backupJob->backups_to_delete;
     }
 
     public function getDatabases(): array
     {
-        return $this->backupJob->databases ?? [];
+        return (array) $this->backupJob->databases;
     }
 }

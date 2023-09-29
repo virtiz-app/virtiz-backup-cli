@@ -9,5 +9,5 @@ class DatabaseType
 {
     public const MySql = 'mysql';
 
-    public const PostgreSql = 'postgresql';
+    public const PostgreSql = 'pgsql';
 }

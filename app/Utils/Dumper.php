@@ -38,7 +38,7 @@ class Dumper
 
     public function start(): void
     {
-        $this->temporaryDirectory = (new TemporaryDirectory)->create();
+        $this->temporaryDirectory = TemporaryDirectory::make();
         $this->backupZip          = $this->temporaryDirectory->path('backup.zip');
         $this->manifest           = new Manifest($this->temporaryDirectory->path('manifest.txt'));
 
@@ -46,7 +46,6 @@ class Dumper
     }
 
     /**
-     * @throws DumpFailed
      * @throws CannotStartDump
      */
     private function dumpDatabase(string $database): void

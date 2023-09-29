@@ -15,9 +15,9 @@ class BackupJobObject
         $this->backupJob = $response->object();
     }
 
-    public function getName(): string
+    public function getFilePath(): string
     {
-        return $this->backupJob->name ?? '';
+        return $this->backupJob->file_path ?? '';
     }
 
     public function getPatchUrl(): string

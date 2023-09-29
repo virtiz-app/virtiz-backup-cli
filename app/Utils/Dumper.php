@@ -182,7 +182,7 @@ class Dumper
         $this->rescue(function() {
             $this->filesystem($this->backupJob->getDiskConfig())
                  ->writeStream(
-                     $this->backupJob->getName() . '.zip',
+                     $this->backupJob->getFilePath(),
                      fopen($this->backupZip, 'r')
                  );
         });

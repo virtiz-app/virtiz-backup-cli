@@ -22,6 +22,7 @@
         "illuminate/http": "^8.83",
         "laravel-zero/framework": "^8.10",
         "league/flysystem-aws-s3-v3": "^1.0",
+        "league/flysystem-sftp": "^1.0",
         "spatie/db-dumper": "^2.21",
         "spatie/temporary-directory": "^1.3"
     },

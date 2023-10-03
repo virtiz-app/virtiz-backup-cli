@@ -22,7 +22,7 @@
         "laravel-zero/framework": "^9.2",
         "league/flysystem-aws-s3-v3": "^3.16",
         "league/flysystem-ftp": "^3.16",
-        "league/flysystem-sftp": "^3.15",
+        "league/flysystem-sftp-v3": "^3.16",
         "spatie/db-dumper": "^3.4",
         "spatie/temporary-directory": "^2.2"
     },
